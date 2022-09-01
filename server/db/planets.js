@@ -1,11 +1,11 @@
-// const connection = require('./connection')
+const connection = require('./connection')
 
-// //write db functions here
+//write db functions here
 
-// function getPlanets (db = connection) {
-//   return db('planet').select()
-// }
+function getPlanets(db = connection) {
+  return db('planet').select()
+}
 
-// module.exports = {
-//   getPlanets
-// }
+module.exports = {
+  getPlanets,
+}
