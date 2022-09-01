@@ -1,8 +1,8 @@
-const express = require('express')
+//const express = require('express')
 
-const db = require('../db/planets')
+//const db = require('../db/planets')
 
-const router = express.Router()
+//const router = express.Router()
 
 // router.get('/', (req, res) => {
 //   db.getFruits()
@@ -16,4 +16,4 @@ const router = express.Router()
 //     })
 // })
 
-module.exports = router
+//module.exports = router
