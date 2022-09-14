@@ -8,12 +8,12 @@ export default defineConfig({
       fastRefresh: process.env.NODE_ENV !== 'test',
     }),
   ],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-      },
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'http://localhost:3001',
+  //       changeOrigin: true,
+  //     },
+  //   },
+  // },
 })
