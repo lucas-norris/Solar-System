@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require('path')
 
 module.exports = {
@@ -21,8 +22,8 @@ module.exports = {
     client: 'postgresql',
     connection: process.env.DATABASE_URL,
     pool: {
-      min: 2,
-      max: 10,
+      min: 0,
+      max: 15,
     },
     migrations: {
       tableName: 'knex_migrations',
