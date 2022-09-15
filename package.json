@@ -18,7 +18,7 @@
     "dev:server": "nodemon --watch server server/index.js",
     "build": "run-p build:client build:server",
     "build:client": "vite build",
-    "build:server": "npm run knex -- migrate:latest",
+    "build:server": "nodemon --watch server server/index.js",
     "lint": "eslint --ext .js,.jsx .",
     "knex": "knex --knexfile ./server/db/knexfile.js",
     "dev:css": "tailwindcss -i server/public/main.css -o server/public/output.css --watch",
