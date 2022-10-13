@@ -10,14 +10,14 @@
     "node": "16.14.2"
   },
   "scripts": {
-    "start": "vite",
+    
     "test": "jest",
     "test:watch": "jest --noStackTrace --watchAll",
     "dev": "run-p dev:client dev:css",
     "dev:client": "vite",
     "build": "run-p build:client",
     "build:client": "vite build",
-    "preview": "vite preview --port 8080",
+    "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx .",
     "knex": "knex --knexfile ./server/db/knexfile.js",
     "dev:css": "tailwindcss -i server/public/main.css -o server/public/output.css --watch",
