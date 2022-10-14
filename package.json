@@ -10,7 +10,7 @@
     "node": "16.14.2"
   },
   "scripts": {
-    
+    "start": "vite",
     "test": "jest",
     "test:watch": "jest --noStackTrace --watchAll",
     "dev": "run-p dev:client dev:css",
