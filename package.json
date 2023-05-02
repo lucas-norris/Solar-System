@@ -20,7 +20,7 @@
     "build:client": "vite build",
     "lint": "eslint --ext .js,.jsx .",
     "knex": "knex --knexfile ./server/db/knexfile.js",
-    "dev:css": "tailwindcss -i server/public/main.css -o server/public/output.css --watch",
+    "dev:css": "tailwindcss -i ./public/main.css -o ./public/output.css --watch",
     "vite:start": "vite",
     "vite:build": "vite build",
     "test:e2e": "jest --selectProjects e2e --runInBand"
