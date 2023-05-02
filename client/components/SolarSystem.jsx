@@ -24,35 +24,23 @@ function SolarSystemMaker() {
   const [hovering, setHovering] = useState(false)
   const dispatch = useDispatch()
 
-  const sunMap = useLoader(TextureLoader, '/server/public/images/sun2.jpg')
-  const earthMap = useLoader(TextureLoader, '/server/public/images/earth.jpg')
-  const mercuryMap = useLoader(
-    TextureLoader,
-    '/server/public/images/mercury.jpg'
-  )
-  const venusMap = useLoader(TextureLoader, '/server/public/images/venus.jpg')
-  const marsMap = useLoader(TextureLoader, '/server/public/images/mars.jpg')
-  const jupiterMap = useLoader(
-    TextureLoader,
-    '/server/public/images/jupiter.jpg'
-  )
-  const saturnMap = useLoader(TextureLoader, '/server/public/images/saturn.jpg')
-  const uranusMap = useLoader(
-    TextureLoader,
-    '/server/public/images/uranus2.jpg'
-  )
-  const neptuneMap = useLoader(
-    TextureLoader,
-    '/server/public/images/neptune.jpg'
-  )
-  const moonMap = useLoader(TextureLoader, '/server/public/images/moon.jpg')
+  const sunMap = useLoader(TextureLoader, 'images/sun.jpg')
+  const earthMap = useLoader(TextureLoader, 'images/earth.jpg')
+  const mercuryMap = useLoader(TextureLoader, 'images/mercury.jpg')
+  const venusMap = useLoader(TextureLoader, 'images/venus.jpg')
+  const marsMap = useLoader(TextureLoader, 'images/mars.jpg')
+  const jupiterMap = useLoader(TextureLoader, 'images/jupiter.jpg')
+  const saturnMap = useLoader(TextureLoader, 'images/saturn.jpg')
+  const uranusMap = useLoader(TextureLoader, 'images/uranus2.jpg')
+  const neptuneMap = useLoader(TextureLoader, 'images/neptune.jpg')
+  const moonMap = useLoader(TextureLoader, 'images/moon.jpg')
   // const ringMap = useLoader(
   //   TextureLoader,
-  //   '/server/public/images/saturnRing.png'
+  //   '/images/saturnRing.png'
 
   // )
-  const ringMap = useTexture('/server/public/images/saturnsRing2.png')
-  // const plutoMap = useLoader(TextureLoader, '/server/public/images/pluto.jpg')
+  const ringMap = useTexture('images/saturnsRing2.png')
+  // const plutoMap = useLoader(TextureLoader, '/images/pluto.jpg')
 
   const sunMesh = useRef()
   const mercuryMesh = useRef()
@@ -523,7 +511,7 @@ function SolarSystemMaker() {
 export default function SolarSystem() {
   return (
     <div
-      className="flex flex-row bg-black cursor-[url(/server/public/images/rocket.png),_pointer]"
+      className="flex flex-row bg-black cursor-[url(/images/rocket.png),_pointer]"
       // style={{ width: '100vw', height: '100vh' }}
     >
       <Navbar />

@@ -12,12 +12,12 @@
   "scripts": {
     "start": "vite",
     "test": "jest",
+    "preview": "vite preview --port 3000",
     "test:watch": "jest --noStackTrace --watchAll",
     "dev": "run-p dev:client dev:css",
     "dev:client": "vite",
     "build": "run-p build:client",
     "build:client": "vite build",
-    "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx .",
     "knex": "knex --knexfile ./server/db/knexfile.js",
     "dev:css": "tailwindcss -i server/public/main.css -o server/public/output.css --watch",
@@ -61,6 +61,7 @@
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.2.2",
     "redux": "^4.2.0",
+    "rollup-plugin-copy": "^3.4.0",
     "sqlite3": "^5.0.8",
     "superagent": "7.1.1",
     "three": "^0.142.0"
