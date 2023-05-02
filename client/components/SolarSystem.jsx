@@ -24,22 +24,22 @@ function SolarSystemMaker() {
   const [hovering, setHovering] = useState(false)
   const dispatch = useDispatch()
 
-  const sunMap = useLoader(TextureLoader, 'images/sun.jpg')
-  const earthMap = useLoader(TextureLoader, 'images/earth.jpg')
-  const mercuryMap = useLoader(TextureLoader, 'images/mercury.jpg')
-  const venusMap = useLoader(TextureLoader, 'images/venus.jpg')
-  const marsMap = useLoader(TextureLoader, 'images/mars.jpg')
-  const jupiterMap = useLoader(TextureLoader, 'images/jupiter.jpg')
-  const saturnMap = useLoader(TextureLoader, 'images/saturn.jpg')
-  const uranusMap = useLoader(TextureLoader, 'images/uranus2.jpg')
-  const neptuneMap = useLoader(TextureLoader, 'images/neptune.jpg')
-  const moonMap = useLoader(TextureLoader, 'images/moon.jpg')
+  const sunMap = useLoader(TextureLoader, '/images/sun.jpg')
+  const earthMap = useLoader(TextureLoader, '/images/earth.jpg')
+  const mercuryMap = useLoader(TextureLoader, '/images/mercury.jpg')
+  const venusMap = useLoader(TextureLoader, '/images/venus.jpg')
+  const marsMap = useLoader(TextureLoader, '/images/mars.jpg')
+  const jupiterMap = useLoader(TextureLoader, '/images/jupiter.jpg')
+  const saturnMap = useLoader(TextureLoader, '/images/saturn.jpg')
+  const uranusMap = useLoader(TextureLoader, '/images/uranus2.jpg')
+  const neptuneMap = useLoader(TextureLoader, '/images/neptune.jpg')
+  const moonMap = useLoader(TextureLoader, '/images/moon.jpg')
   // const ringMap = useLoader(
   //   TextureLoader,
   //   '/images/saturnRing.png'
 
   // )
-  const ringMap = useTexture('images/saturnsRing2.png')
+  const ringMap = useTexture('/images/saturnsRing2.png')
   // const plutoMap = useLoader(TextureLoader, '/images/pluto.jpg')
 
   const sunMesh = useRef()
