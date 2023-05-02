@@ -358,6 +358,7 @@ function SolarSystemMaker() {
 export default function SolarSystem() {
   return (
     <div
+      style={{ cursor: 'url(/images/rocket.png), pointer' }}
       className="flex flex-row bg-black"
       // style={{ width: '100vw', height: '100vh' }}
     >
